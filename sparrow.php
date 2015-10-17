@@ -532,6 +532,7 @@ class Sparrow {
         $this->sql(array(
             'UPDATE',
             $this->table,
+            $this->joins,
             'SET',
             implode(',', $values),
             $this->where
@@ -1210,6 +1211,14 @@ class Sparrow {
             $this->cache = $cache;
             $this->cache_type = $type;
         }
+    }
+    
+    /**
+     * Set key prefix
+     * @param string $key_prefix
+     */
+    public function setPrefixKey($key_prefix) {
+        $this->key_prefix = $key_prefix;
     }
 
     /**

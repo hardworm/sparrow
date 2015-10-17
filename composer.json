@@ -1,5 +1,5 @@
 {
-    "name": "unlight/sparrow",
+    "name": "hardworm/sparrow",
     "description": "Sparrow is a fluent SQL builder.",
     "autoload": {
     	"classmap": ["sparrow.php"]
